@@ -1,4 +1,6 @@
 # Log File Analyzer
+# Adam Flick
+# January 2025
 
 import os
 import re
@@ -9,7 +11,7 @@ import csv
 
 # =====================================
 # File Selection & Validation Functions
-# =====================================
+#======================================
 
 # Function to prompt user to select a file (JSON, CSV, or TXT)
 def select_load_file():
@@ -297,6 +299,10 @@ def export_results(parsed_log):
     print(f"Results saved to {save_path}")
 
 
+# ====================
+# Main Program and CLI
+# ====================
+
 def main_loop():
     """
     Continuously runs the main menu flow until the user decides to exit.
@@ -311,9 +317,6 @@ def main_loop():
             print("Exiting the Log File Analyzer.")
             break
 
-# ====================
-# Main Program and CLI
-# ====================
 
 def main():
     """
